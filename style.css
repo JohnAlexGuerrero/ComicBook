@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    overflow: scroll;
+    margin: 0;
+  }
+
+.hero{
+     background: rgb(1,1,14);
+background: linear-gradient(22deg, rgba(1,1,14,1) 19%, rgba(215,69,69,0.6964985823430935) 81%, rgba(233,233,238,1) 100%); 
+    width: 100%;
+    /* height: auto; */
+    /* border: 1px solid purple;     */
+    box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);
+    -webkit-box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);
+    -moz-box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);    
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+.hero-content{
+    /* border: 1px solid gray;   */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.hero-dp{
+    border: 1px solid orange;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.hero-info{
+    /* border: 1px solid blue;   */
+    position: absolute;
+    bottom: 47px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-title{
+    color: #fff;
+    font-size:35px;
+    top: 0;
+    padding-top: 0;
+}
+
+.hero-name{
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.hero-btn{
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: red;
+}
+
+/* carousel */
+.carousel-content{
+    position: relative;
+    width: 398px;
+    height: 100px;
+    padding: 5px 0px;
+    /* border: 1px solid #CCC; */
+    /* border-radius: 15px;
+    background: #eee; */
+}
+
+.carousel{
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+}
+
+.carousel-hero{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #c58e85;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.carousel-hero img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/* characters */
+
+.characters{
+    margin-top: 3rem;
+    padding: 0;
+    width: 100%;
+}
+
+.character-header{
+    /* border: 1px solid red;    */
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.character-title{
+    margin-top:5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.character-btn{
+    border: 1px solid red;  
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.character-btn:active{
+    transform: scale(.9);
+}
+
+.character-btn p{
+    font-weight: 700;
+    color: white;
+    font-size: 25px;
+    /* text-align: center; */
+    padding: 0 .2em;
+}
+
+.character-carrusel{
+    /* border: 1px solid green; */
+    width: 300;
+    height: auto;
+    padding: 0 .5rem;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.character-hero{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(216, 213, 213);
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.character-hero img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0;
+}
+
+/* comics */
+
+.comics{
+    margin-top: 15px;
+    width: 100%;
+    /* border: 1px solid salmon; */
+}
+
+.comics-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.comics-title{
+    margin-top:5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.comics-btn{
+    border: 1px solid red;  
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.comics-btn p{
+    font-weight: 700;
+    color: white;
+    font-size: 25px;
+    /* text-align: center; */
+    padding: 0 .2em;
+}
+
+.comics-content{
+    margin-top: 1.5em;
+    padding: 0 .5rem;
+    
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px
+}
+
+.comic{
+    width: 120px;
+    height: 200px;
+    background-color: rgb(192, 185, 185);
+    border-radius: 5px;
+    box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);
+    -webkit-box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);
+    -moz-box-shadow: 1px 11px 17px 0px rgba(73, 68, 68, 0.75);    
+    cursor: pointer;   
+    
+}
+
+.comic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.comic-title{
+    margin-top: 1em;
+    width: 120px;
+    padding: .2rem;
+}
+
+.comic-title h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.comic-title p{
+    font-size: 10px;
+    text-align: center;
+}
